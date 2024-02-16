@@ -1,0 +1,4 @@
+DATABASE_DRIVER_CLASS_NAME = org.postgresql.Driver
+DATABASE_URL = jdbc:postgresql://someHost:1111/db
+USERNAME = postgres
+PASSWORD = postgres

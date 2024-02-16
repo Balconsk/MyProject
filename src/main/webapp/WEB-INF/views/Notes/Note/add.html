@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/TaskManager/main.css" th:href="@{/css/Notes/main.css}">
+</head>
+<body>
+<form th:method="POST" th:action="@{./add}" th:object="${note}">
+
+    <label for="name">Name</label>
+    <input id="name" type="text" th:field="*{name}">
+    <div class="validation_error" th:if="${#fields.hasErrors('name')}" th:errors="*{name}" >Name error</div>
+    <br>
+    <label for="description">Description</label>
+    <br>
+    <textarea cols="50" rows="12" id ="description" th:field="*{description}"></textarea>
+    <div class="validation_error" th:if="${#fields.hasErrors('description')}" th:errors="*{description}" >Description error</div>
+    <br>
+    <input type="submit" value="Add">
+</form>
+
+</body>
+</html>

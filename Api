@@ -1,0 +1,20 @@
+[1] GET | Получить html страницу с папками и записками
+/noteJson-app/folder/{id}
+
+[1] DELETE | Удалит папку
+/noteJson-app/folder/{id}
+
+[1] GET | Откроет модальное окно с предложением изменит имя папки
+/noteJson-app/folder/edit-name/{id}
+
+[1] GET | Получить записку с editorJS
+/noteJson-app/noteJson/{id}
+
+[1] DELETE | Удалит записку
+/noteJson-app/noteJson/{id}
+
+[1] GET | Откроет модальное окно с предложением изменит имя записки
+/noteJson-app/noteJson/edit-name/{id}
+
+
+1 - Созданы захваты

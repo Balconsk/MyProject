@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module</title>
+  <link rel="stylesheet" href="./static/css/main-page.css" th:href="@{/static/css/main-page.css}">
+</head>
+
+<body>
+<div class="w-screen h-screen flex justify-center items-center bg-backgroundColor p-3">
+  <div class="bg-primary p-5 rounded-md max-w-lg min-h-56 w-full flex flex-col justify-between">
+    <div>
+      <h3 class="text-2xl font-bold mb-1 text-center">Title</h3>
+      <div class="w-full bg-black h-0.5"></div>
+    </div>
+    <form action=""
+          th:action="@{/note-app/folder/{id}/create-note/(id=${noteTemplate.getParentFolderId()})}"
+          th:object="${noteTemplate}"
+          th:method="POST">
+      <div class="mb-4">
+        <label class="mb-1 block text-lg font-normal" for="input1">Note Name</label>
+        <input id="input1" class="w-full rounded-sm text-xl p-1" type="text" name="name" th:field="*{noteName}">
+      </div>
+      <div>
+        <div class="flex justify-between flex-wrap">
+          <a class="button rounded-md py-1 text-lg mb-2 pb-1 pt-1 px-2">Back</a>
+          <button class="button rounded-md py-1 text-lg mb-2 pb-1 pt-1 px-2" type="submit">Create note</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+
+</html>

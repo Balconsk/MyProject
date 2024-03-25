@@ -85,15 +85,16 @@ public class FolderDAO {
                 folderTemplate.getFolderName());
     }
     public void deleteFolderById(int id){
-        Folder folder = getFolder(id);
-        for (MetaNote n: folder.getItemsNote()){
-            noteDAO.deleteNote(n);
-        }
-        for (MetaFolder f: folder.getItemsFolder()){
-            this.deleteFolder(f);
-        }
+//        Folder folder = getFolder(id);
+//        for (MetaNote n: folder.getItemsNote()){
+//            noteDAO.deleteNote(n);
+//        }
+//        for (MetaFolder f: folder.getItemsFolder()){
+//            this.deleteFolder(f);
+//        }
         jdbcTemplate.update("DELETE FROM folder WHERE folder_id = ?",id);
     }
+
     public void deleteFolder(Folder folder){
         deleteFolderById(folder.getId());
     }

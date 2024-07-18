@@ -1,14 +1,11 @@
 package ru.balcon.MyProject.DAO;
 
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import ru.balcon.MyProject.model.Consumer;
-import ru.balcon.MyProject.model.Folder;
+import ru.balcon.MyProject.model.folder.Folder;
 
-import javax.sql.DataSource;
 import java.util.List;
 
 public class FolderDAOTest {

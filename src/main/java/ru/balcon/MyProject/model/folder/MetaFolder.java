@@ -1,4 +1,4 @@
-package ru.balcon.MyProject.model;
+package ru.balcon.MyProject.model.folder;
 
 public class MetaFolder {
     int id;

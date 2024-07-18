@@ -1,4 +1,4 @@
-package ru.balcon.MyProject.model;
+package ru.balcon.MyProject.model.note;
 
 public class MetaNote {
     int noteId;

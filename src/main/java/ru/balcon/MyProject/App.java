@@ -2,7 +2,7 @@ package ru.balcon.MyProject;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import ru.balcon.MyProject.model.Note;
+import ru.balcon.MyProject.model.note.Note;
 
 public class App {
     public static void main(String[] args) throws JsonProcessingException {
@@ -16,4 +16,3 @@ public class App {
         System.out.println(note);
     }
 }
-//{"NoteName":"Loading...","editorJsData":{"time":1708268570412,"blocks":[],"version":"2.29.0"}}

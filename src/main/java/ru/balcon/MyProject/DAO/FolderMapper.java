@@ -1,7 +1,7 @@
 package ru.balcon.MyProject.DAO;
 
 import org.springframework.jdbc.core.RowMapper;
-import ru.balcon.MyProject.model.Folder;
+import ru.balcon.MyProject.model.folder.Folder;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

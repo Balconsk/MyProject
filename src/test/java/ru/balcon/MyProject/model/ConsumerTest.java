@@ -3,6 +3,7 @@ package ru.balcon.MyProject.model;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import ru.balcon.MyProject.model.consumer.Consumer;
 
 public class ConsumerTest {
     @Test

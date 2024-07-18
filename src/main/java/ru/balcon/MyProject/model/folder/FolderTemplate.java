@@ -1,4 +1,4 @@
-package ru.balcon.MyProject.model;
+package ru.balcon.MyProject.model.folder;
 
 import jakarta.validation.constraints.Size;
 

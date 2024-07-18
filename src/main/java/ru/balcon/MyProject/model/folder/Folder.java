@@ -1,6 +1,7 @@
-package ru.balcon.MyProject.model;
+package ru.balcon.MyProject.model.folder;
 
 import jakarta.validation.constraints.Size;
+import ru.balcon.MyProject.model.note.MetaNote;
 
 import java.util.ArrayList;
 import java.util.List;

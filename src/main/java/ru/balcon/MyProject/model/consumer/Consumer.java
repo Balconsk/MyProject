@@ -1,4 +1,4 @@
-package ru.balcon.MyProject.model;
+package ru.balcon.MyProject.model.consumer;
 
 public class Consumer {
     int id;

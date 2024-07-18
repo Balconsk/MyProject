@@ -4,7 +4,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import ru.balcon.MyProject.DAO.NoteDAO;
-import ru.balcon.MyProject.model.Note;
+import ru.balcon.MyProject.model.note.Note;
 
 @RestController
 @RequestMapping("/note-app/api/v1/")

@@ -5,9 +5,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
-import ru.balcon.MyProject.model.MetaNote;
-import ru.balcon.MyProject.model.Note;
-import ru.balcon.MyProject.model.NoteTemplate;
+import ru.balcon.MyProject.model.note.MetaNote;
+import ru.balcon.MyProject.model.note.Note;
+import ru.balcon.MyProject.model.note.NoteTemplate;
 
 @Component
 public class NoteDAO {

@@ -1,7 +1,7 @@
 package ru.balcon.MyProject.DAO;
 
 import org.springframework.stereotype.Component;
-import ru.balcon.MyProject.model.Consumer;
+import ru.balcon.MyProject.model.consumer.Consumer;
 
 @Component
 public class ConsumerDAO {
@@ -16,5 +16,14 @@ public class ConsumerDAO {
     public Consumer getConsumer(){
        return new Consumer(5,"UserName");
     }
+
+    public void addConsumer(){
+
+    }
+
+    public boolean isConsumerNameAvailable(String consumerName){
+        return false;
+    }
+
 
 }

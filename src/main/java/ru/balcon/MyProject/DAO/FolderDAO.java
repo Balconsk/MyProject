@@ -3,7 +3,11 @@ package ru.balcon.MyProject.DAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
-import ru.balcon.MyProject.model.*;
+import ru.balcon.MyProject.model.consumer.Consumer;
+import ru.balcon.MyProject.model.folder.Folder;
+import ru.balcon.MyProject.model.folder.FolderTemplate;
+import ru.balcon.MyProject.model.folder.MetaFolder;
+import ru.balcon.MyProject.model.note.MetaNote;
 
 import java.util.List;
 

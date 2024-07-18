@@ -1,4 +1,4 @@
 jdbc.diver = org.postgresql.Driver
-jdbc.url = url
+jdbc.url = jdbc:postgresql://host:port/db
 jdbc.username = username
 jdbc.password = password

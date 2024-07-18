@@ -8,7 +8,11 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import ru.balcon.MyProject.DAO.FolderDAO;
 import ru.balcon.MyProject.DAO.NoteDAO;
-import ru.balcon.MyProject.model.*;
+import ru.balcon.MyProject.model.consumer.Consumer;
+import ru.balcon.MyProject.model.folder.Folder;
+import ru.balcon.MyProject.model.folder.FolderTemplate;
+import ru.balcon.MyProject.model.note.MetaNote;
+import ru.balcon.MyProject.model.note.NoteTemplate;
 
 @Controller
 @RequestMapping("note-app")

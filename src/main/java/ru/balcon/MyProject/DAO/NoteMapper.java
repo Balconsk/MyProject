@@ -3,8 +3,8 @@ package ru.balcon.MyProject.DAO;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.jdbc.core.RowMapper;
-import ru.balcon.MyProject.model.EditorJsData;
-import ru.balcon.MyProject.model.Note;
+import ru.balcon.MyProject.model.note.EditorJsData;
+import ru.balcon.MyProject.model.note.Note;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

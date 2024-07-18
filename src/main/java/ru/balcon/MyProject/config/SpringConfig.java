@@ -18,6 +18,7 @@ import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 
 import javax.sql.DataSource;
+import java.util.Objects;
 
 @Configuration
 @ComponentScan("ru.balcon.MyProject")
@@ -66,13 +67,10 @@ public class SpringConfig implements WebMvcConfigurer {
     @Bean
     public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-
-        dataSource.setDriverClassName(environment.getProperty("jdbc.diver"));
-//        dataSource.setDriverClassName(environment.getProperty("jdbc.database_driver_class_name"));
-        dataSource.setUrl(environment.getProperty("jdbc.url"));
-        dataSource.setUsername(environment.getProperty("jdbc.username"));
-        dataSource.setPassword(environment.getProperty("jdbc.password"));
-
+        dataSource.setDriverClassName(Objects.requireNonNull(environment.getProperty("jdbc.diver")));
+        dataSource.setUrl(Objects.requireNonNull(environment.getProperty("jdbc.url")));
+        dataSource.setUsername(Objects.requireNonNull(environment.getProperty("jdbc.username")));
+        dataSource.setPassword(Objects.requireNonNull(environment.getProperty("jdbc.password")));
         return dataSource;
     }
 
